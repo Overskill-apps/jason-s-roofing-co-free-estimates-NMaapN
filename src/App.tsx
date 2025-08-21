@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
+import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/thank-you" element={<ThankYou />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster />
